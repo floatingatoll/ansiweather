@@ -117,16 +117,16 @@ then
 		Clear)
 			if [ $period = "night" ]
 			then
-				icon="$moon "
+				icon="$moon"
 			else
-				icon="$sun  "
+				icon="$sun"
 			fi
 			;;
 		Clouds)
-			icon="$clouds  "
+			icon="$clouds"
 			;;
 		Rain)
-			icon="$rain  "
+			icon="$rain"
 			;;
 	esac
 fi
@@ -135,4 +135,4 @@ fi
 
 ###[ Display current Weather ]#################################################
 
-echo -e "$background$text Current weather in $city $delimiter$data $temperature $scale $icon$dashes$text Humidity $delimiter$data $humidity % $dashes$text Pressure $delimiter$data $pressure hPa \033[0m"
+echo -e "$icon"
